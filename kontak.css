@@ -7,107 +7,39 @@
   font-family: "Open Sans", sans-serif;
 }
 
-body{
-    background-image: url('image/jeruk.jpeg');
-    width: 100%;
-    height: auto;
-    background-size: 100% 110vh;
-    position: relative;
-    background-repeat: no-repeat;
+body {
+  background-image: url('image/jeruk.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-top: 50px;
+  height: 100vh;
 }
 
-.wrapper {
-    display: flex;
-    justify-content: space-between;
-    font-size: 20px;
-    padding: 15px;
-    width: 100%;
-    height: 80px;
-    background-color: rgb(40, 39, 39);
-    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
-    border-radius: 25px;
-    z-index: 999;
-}
-
-.brand {
-    display: flex;
-    flex-direction: row;
-    font-size: 1.5em;
-    padding: 15px;
-    text-transform: capitalize;
-}
-
-.firstname {
-    color: antiquewhite;
-    font-weight: 700;
-}
-
-.lastname {
-    color: rgb(220, 100, 20);
-    font-weight: 400;
-    padding-left: 4px;
-
-}
-
-.navigation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navigation>li {
-    list-style-type: none;
-    padding: 15px;
-}
-
-.navigation>li :hover {
-    color: crimson;
-    padding: 5px;
-    transition: all 0.3s ease-in-out;
-}
-.navigation>li>img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    padding: 15px;
-}
-
-.navigation>li>img:hover {
-    width: 65px;
-    height: 65px;
-    border-radius: 65px;
-    padding: 15px;
-    transition: all .3s ease-in-out;
-}
-
-.navigation>li>a {
-    color: antiquewhite;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-.navigation>li>a:hover {
-    color: crimson;
-    transition: all 0.3s ease-in-out;
-}
-
-.active {
-    background-color: crimson;
-    color: antiquewhite;
-    padding: 15px;
-    border-radius: 20%;
-}
-
-.active:hover {
-    color: antiquewhite !important;
-    transition: all 0.3s ease-in-out;
-    background-color: crimson;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .awrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 400px;
   border-radius: 8px;
   padding: 30px;
+  margin-top: 50px;
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(8px);
@@ -118,6 +50,7 @@ form {
   display: flex;
   gap: 20px;
   flex-direction: column;
+  width: 100%;
 }
 
 h2 {
@@ -132,7 +65,17 @@ h2 {
   margin: 15px 0;
 }
 
-.input-field label{
+.input-field input,
+.input-field textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #fff;
+}
+
+.input-field label {
   position: absolute;
   top: 50%;
   left: 0;
@@ -143,34 +86,13 @@ h2 {
   transition: 0.15s ease;
 }
 
-.input-field textarea input {
-  width: 100%;
-  height: 40px;
-  background: transparent;
-  border: none;
-  outline: none;
-  font-size: 16px;
-  color: #fff;
-}
-
 .input-field input:focus~label,
-.input-field input:valid~label {
+.input-field input:valid~label,
+.input-field textarea:focus~label,
+.input-field textarea:valid~label {
   font-size: 0.8rem;
   top: 10px;
   transform: translateY(-120%);
-}
-
-#remember {
-  accent-color: #fff;
-}
-
-.awrapper a {
-  color: #efefef;
-  text-decoration: none;
-}
-
-.awrapper a:hover {
-  text-decoration: underline;
 }
 
 button {
@@ -192,12 +114,13 @@ button:hover {
   background: rgba(255, 255, 255, 0.15);
 }
 
-.register {
-  text-align: center;
-  margin-top: 30px;
-  color: #fff;
+@media screen and (max-width: 768px) {
+  .awrapper {
+      width: 90%;
+      padding: 20px;
+  }
 }
 
 footer {
-    position: relative;
+    position: fixed;
 }
