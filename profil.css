@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: #333;
 }
 
@@ -91,4 +91,5 @@ body {
     object-fit: cover;
     border: 5px solid #cccccc;
   }  
+
   
