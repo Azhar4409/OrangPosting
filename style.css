@@ -130,6 +130,7 @@ footer p {
     justify-content: flex-start;
     font-size: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 25%;
 }
 
 .text>p {
