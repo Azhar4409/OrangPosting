@@ -29,27 +29,28 @@
         </nav>
     </header>
     <section>
-        <div class="awrapper">
-            <form action="#">
-              <h2>Contact Us</h2>
-                <div class="input-field">
-                <input type="text" required>
-                <label>Enter your Name</label>
-              </div>
-              <div class="input-field">
-                <input type="email" required>
-                <label>Enter your email</label>
-              </div>
-              <div class="input-field">
-                <textarea class="message" required></textarea>
-                <label>Enter your message</label>
-              </div>
-              <button type="submit">Send Message</button>
-              <!-- <div class="kritik">
-                <p>Don't have an account? <a href="#">Kritik</a></p>
-              </div> -->
-            </form>
+      <div class="awrapper">
+        <form id="contactForm">
+          <h2>Contact Us</h2>
+          <div class="input-field">
+            <input type="text" id="name" required>
+            <label for="name">Enter your Name</label>
           </div>
+          <div class="input-field">
+            <input type="email" id="email" required>
+            <label for="email">Enter your Email</label>
+          </div>
+          <div class="input-field">
+            <input type="text" id="subject" required>
+            <label for="subject">Enter your Subject</label>
+          </div>
+          <div class="input-field">
+            <textarea id="message" class="message" required></textarea>
+            <label for="message">Enter your Message</label>
+          </div>
+          <button type="button" id="email-button">Send Message</button>
+        </form>
+      </div>      
     </section>
     <footer class="footer">
         <p>&copy; <b>2024 Azhar49 x Harrys752. All rights reserved.</b></p>
@@ -57,5 +58,7 @@
     <script>
         feather.replace();
     </script>
+    <script src="kontak.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </body>
 </html>
