@@ -189,3 +189,7 @@ footer p {
 .content>a:hover {
     background-color: orange;
 }
+
+.text>h1 {
+    margin-left: 25%;
+}
