@@ -109,39 +109,6 @@ body {
     line-height: 1.6;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background: #333;
-    color: #fff;
-}
-
-header .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-}
-
-header nav ul li {
-    margin: 0 10px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-header nav ul li a:hover {
-    text-decoration: underline;
-}
-
 .hero {
     background: url('https://source.unsplash.com/1600x900/?business') no-repeat center center/cover;
     text-align: center;
@@ -214,8 +181,8 @@ footer a:hover {
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     align-items: center;
+    box-shadow: #333;
 }
 
 .ahome {
@@ -225,4 +192,12 @@ footer a:hover {
     background-size: 100% 110vh;
     position: relative;
     background-repeat: no-repeat;
+}
+
+.dev {
+    margin: 25%;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
