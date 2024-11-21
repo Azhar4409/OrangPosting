@@ -33,13 +33,12 @@ header {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 45%;
+  top: 54%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px;
+  width: 500px;
   border-radius: 8px;
   padding: 30px;
-  margin-top: 50px;
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(8px);

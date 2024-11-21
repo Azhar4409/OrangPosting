@@ -45,6 +45,12 @@ body {
 }
 
 
+.about {
+    color: aliceblue;
+    text-align: center;
+    left: 35%;
+}
+
 .about,
 .testimonials {
     padding: 50px 20px;
