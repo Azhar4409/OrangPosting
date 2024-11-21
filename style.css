@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
 }
 
 .wrapper {
@@ -93,15 +92,6 @@
     background-color: crimson;
 }
 
-.home {
-    background-image: url(image/jeruk.jpg);
-    width: 100%;
-    height: auto;
-    background-size: 100% 110vh;
-    position: relative;
-    background-repeat: no-repeat;
-}
-
 footer {
     background-color: #1d1b1b;
     padding: 10px 0;
@@ -124,10 +114,20 @@ footer p {
     z-index: 999;
 }
 
+.home {
+    color: white;
+    background-image: url(image/jeruk.jpg);
+    width: 100%;
+    height: auto;
+    background-size: 100% 110vh;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
 .text {
     align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     font-size: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -153,4 +153,39 @@ footer p {
 .logo {
     padding-left: 65px;
     padding-top: 40px;
+}
+
+.content>h1 {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    font-size: 35px;
+    box-shadow: #1d1b1b;
+}
+
+.content>p {
+    display: flex;
+    justify-content: center;
+    box-shadow: #1d1b1b;
+}
+
+.content>a {
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 20%;
+    left: 50%;
+    cursor: pointer;
+    color: white;
+    width: 100px;
+    padding: 15px;
+    box-shadow: #1d1b1b;
+    background-color: green;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.content>a:hover {
+    background-color: orange;
 }
