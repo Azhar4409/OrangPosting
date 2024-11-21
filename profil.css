@@ -208,3 +208,21 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+.produk {
+    margin: 5%;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.ahome {
+    background-image: url(image/jeruk.jpg);
+    width: 100%;
+    height: auto;
+    background-size: 100% 110vh;
+    position: relative;
+    background-repeat: no-repeat;
+}
