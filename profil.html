@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profil</title>
     <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="profil.css">
 </head>
 
@@ -13,89 +14,94 @@
     <header>
         <nav class="wrapper">
             <div class="brand">
+                <li><img src="image/logor.jpg" alt=""></li>
                 <div class="firstname">Orang</div>
                 <div class="lastname">Posting</div>
             </div>
             <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#" class="active">Profil</a></li>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="profil.html">Profil</a></li>
                 <li><a href="kontak.html">Kontak</a></li>
-                <li><img src="image/logor.jpg" alt=""><a href="#"></a></li>
             </ul>
             <div class="navbar-extra">
-                <a href="#" id="search"><i data-feather="search"></i>
-                    <a href="#" id="menu"><i data-feather="menu"></i>
-                    </a>
+                <a href="#" id="search"><i data-feather="search"></i></a>
+                <a href="#" id="menu"><i data-feather="menu"></i></a>
             </div>
         </nav>
-    </header>
+    </header>  
     <section class="ahome">
-        <h1>
-            Produk Kami
-        </h1>
-        <div class="produk">
-            <img src="image/jaket.jpeg" width="350px" alt="">
-            <img src="image/alter.jpg" width="350px" alt="">
-            <img src="image/kaos.jpeg" width="350px" alt="">
-        </div>
         <!-- Hero Section -->
         <section id="home" class="hero">
-            <h1>Produk Kami</h1>
-            <p>Membantu bisnis Anda berkembang dengan solusi terbaik!</p>
-            <a href="#contact" class="btn">Hubungi Kami</a>
+            <h1 style="color: grey;">Produk Kami</h1>
+            <div class="produk">
+                <img src="image/jaket.jpeg" width="350px" alt="">
+                <img src="image/alter.jpg" width="350px" alt="">
+                <img src="image/kaos.jpeg" width="350px" alt="">
+            </div>
         </section>
 
         <!-- About Us -->
         <section id="about" class="about">
-            <h2>About Us</h2>
-            <p>Bisnis XYZ adalah perusahaan yang fokus pada pengembangan solusi bisnis modern, dari pemasaran digital
+            <h2 style="color: aliceblue;">About Us</h2>
+            <p style="color: aliceblue;">Bisnis ORPOS adalah perusahaan yang fokus pada pengembangan solusi bisnis modern, dari pemasaran digital
                 hingga
                 pengelolaan data, untuk membantu klien mencapai tujuan mereka.</p>
         </section>
 
-        <!-- Services -->
-        <section id="services" class="services">
-            <h2>Our Services</h2>
-            <div class="service-cards">
-                <div class="card">
-                    <h3>Digital Marketing</h3>
-                    <p>Kami membantu meningkatkan visibilitas bisnis Anda secara online.</p>
-                </div>
-                <div class="card">
-                    <h3>Consulting</h3>
-                    <p>Memberikan solusi tepat untuk tantangan bisnis Anda.</p>
-                </div>
-                <div class="card">
-                    <h3>Data Analytics</h3>
-                    <p>Mengolah data untuk pengambilan keputusan yang lebih baik.</p>
-                </div>
-            </div>
-        </section>
-
         <!-- Testimonials -->
         <section id="testimonials" class="testimonials">
-            <h2>What Our Clients Say</h2>
+            <h2 style="color: aliceblue;">What Our Clients Say</h2>
             <div class="testimonial">
-                <p>"Bisnis XYZ sangat membantu bisnis saya berkembang pesat. Pelayanan mereka luar biasa!"</p>
-                <span>- John Doe</span>
+                <img src="image/anis.jpg" alt="Gambar Anies" width="50%">
+                <p>"Bisnis ORPOS sangat membantu bisnis saya berkembang pesat. Pelayanan mereka luar biasa!"</p>
+                <span>- Anies</span>
             </div>
             <div class="testimonial">
+                <img src="image/mantap.jpg" alt="Gambar Adit" width="50%">
                 <p>"Tim yang profesional dan hasil yang memuaskan. Highly recommended!"</p>
-                <span>- Jane Smith</span>
+                <span>- Adit</span>
             </div>
         </section>
     </section>
     <br>
-    <div class="cr"><h1>Developer</h1></div>
-    <tr></tr>
-    <div class="dev">
-        <div class="ikon1">
-        <img src="image/ahmad.jpeg" width="100px" height="100px" alt="Harrys752">
-        <p>Harrys752</p>
-        <img src="image/azhar.jpg" width="100px" height="100px" alt="Azhar49">
-        <p>Azhar49</p>
+    <div class="container">
+        <div class="container-text">
+          <h2 class="display-3" id="#developer" align="center" style="color: aliceblue;">Developer</h2>
+          <p style="font-size: 24px; color: aliceblue;" align="center">
+          Yang Mengerjakan Website Singkat Ini.
+          </p>
+          <div class="row">
+            <div class="tim">
+              <img
+                class="rounded-circle mb-3"
+                src="image/azhar.jpg"
+                height="50%"
+              />
+              <h4>Azhar39</h4>
+              <p>Backend Developer</p>
+              <p>
+                <a href="" class="social"><i class="fab fa-instagram"></i></a>
+                <a href="" class="social"><i class="fab fa-facebook"></i></a>
+                <a href="" class="social"><i class="fab fa-youtube"></i></a>
+              </p>
+            </div>
+            <div class="tim">
+              <img
+                class="rounded-circle mb-3"
+                src="image/ahmad.jpeg"
+                height="50%"
+              />
+              <h4>Harrys752</h4>
+              <p>Frontend Developer</p>
+              <p>
+                <a href="" class="social"><i class="fab fa-twitter"></i></a>
+                <a href="" class="social"><i class="fab fa-facebook-f"></i></a>
+                <a href="" class="social"><i class="fab fa-linkedin-in"></i></a>
+              </p>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
     <footer class="footer">
         <p>&copy; <b>2024 Azhar49 x Harrys752. All rights reserved.</b></p>
     </footer>
