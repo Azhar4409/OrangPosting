@@ -197,7 +197,6 @@ footer p {
 .main {
     justify-content: space-between;
     display: flex;
-    gap: 50px;
     padding: 20px;
 }
 
