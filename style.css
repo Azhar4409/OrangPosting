@@ -13,7 +13,6 @@
     height: 80px;
     background-color: rgb(40, 39, 39);
     box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
-    border-radius: 25px;
     z-index: 999;
 }
 
@@ -122,6 +121,7 @@ footer p {
     background-size: 100% 110vh;
     position: relative;
     background-repeat: no-repeat;
+    justify-content: space-between;
 }
 
 .text {
@@ -139,11 +139,11 @@ footer p {
     font-size: 20px;
 }
 
-.text>ul {
+.text>.logo>text {
     list-style: none;
     display: flex;
     flex-direction: column; /* Susunan vertikal */
-    align-items: center;
+    align-items: right;
     margin: 0;
     padding: 0;
     gap: 30px;
@@ -172,8 +172,7 @@ footer p {
 .content>a {
     position: absolute;
     text-align: center;
-    transform: translate(-50%, -50%);
-    top: 20%;
+    bottom: 20px;
     left: 50%;
     cursor: pointer;
     color: white;
@@ -192,4 +191,22 @@ footer p {
 
 .text>h1 {
     margin-left: 25%;
+}
+
+.main {
+    justify-content: space-between;
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.about>h4 {
+    font-size: 20px;
 }
