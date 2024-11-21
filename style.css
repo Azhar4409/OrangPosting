@@ -97,7 +97,7 @@ footer {
     text-align: center;
     position: relative;
     width: 100%;
-    bottom: 0;
+    bottom: 0%;
     font-family: Arial, sans-serif;
     font-size: 14px;
     color: #ffffff;
@@ -113,24 +113,14 @@ footer p {
     z-index: 999;
 }
 
-.home {
-    color: white;
-    background-image: url(image/jeruk.jpg);
-    width: 100%;
-    height: auto;
-    background-size: 100% 110vh;
-    position: relative;
-    background-repeat: no-repeat;
-    justify-content: space-between;
-}
+
 
 .text {
-    align-items: center;
-    display: flex;
-    justify-content: flex-start;
-    font-size: 40px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-left: 25%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure text is above the background image */
 }
 
 .text>p {
@@ -206,8 +196,52 @@ footer p {
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Ensure text is above the background image */
 }
 
 .about>h4 {
     font-size: 20px;
 }
+
+.about>p {
+    font-size: 16px;
+}
+
+.info {
+    position: absolute;
+    bottom: 70%;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure text is above the background image */
+}
+
+.product {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: #333;
+    position: relative;
+    top: 150px;
+    margin: 75px;
+    box-shadow: #333;
+}
+
+.product:hover {
+    box-shadow: #666;
+
+    transition: all 0.5s ease-in-out;
+
+    cursor: pointer;
+    transform: scale(1.02);
+    
+
+}
+
+
+
